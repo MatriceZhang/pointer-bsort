@@ -30,7 +30,7 @@ void bsort(int* ptr, int n)
     int j,k;          //indexed to array
     
     for(j=0;j<n-1;j++)
-        for (k=0;k<n;k++)
+        for (k=j+1;k<n;k++)
             order(ptr+j,ptr+k);     //order the pointer contents
 }
 //...................
